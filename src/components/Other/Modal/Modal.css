@@ -1,0 +1,74 @@
+.Modal{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0,0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.Modal.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.Modal__content{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    transform: scale(0.5);
+    transition: 0.4s all;
+    color: black;
+
+}
+
+.Modal__content.active{
+    transform: scale(1);
+}
+
+.Modal__content input{
+    border: 1px solid black;
+}
+
+.Modal_Form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Modal_Form input{
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.Modal_Form button{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    background: #4befef;
+}
+
+@media (max-width: 350px) {
+    .Modal_Form input {
+       width: 100%;
+    }
+
+    .Modal__content{
+        width: 100%;
+    }
+
+
+
+}

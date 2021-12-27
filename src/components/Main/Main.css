@@ -1,0 +1,39 @@
+.Main{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("http://localhost:3001/static/main.jpg") no-repeat  center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+    flex: 1 1 auto;
+}
+
+.Main__Info{
+    font-size: 40px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.Main__services{
+    display: flex;
+    flex-direction: column;
+}
+
+.Main__services button{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    width: 220px;
+    height: 62px;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+
+@media (max-width: 767px) {
+    .Main__Info h3{
+        display: none;
+    }
+}
+

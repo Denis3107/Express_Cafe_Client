@@ -1,0 +1,47 @@
+.BurgerMenu{
+    width: 100vw;
+    height: 100vh;
+    background: #191919;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    transform: translateY(100vh);
+    transition: 0.5s;
+    overflow-y:scroll;
+}
+
+.BurgerMenu.active{
+    transform: translateY(0);
+}
+
+.BurgerMenu__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 10px;
+}
+
+.BurgerMenu__header h1{
+    padding: 5px;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.BurgerMenu__links{
+    display: flex;
+    flex-direction: column;
+}
+
+.BurgerMenu__links li{
+    margin: 10px 40px;
+    padding: 5px;
+    text-align: center;
+}
+
+.BurgerMenu__links a.active > li{
+    border-bottom: 1px solid #ffff;
+}
+

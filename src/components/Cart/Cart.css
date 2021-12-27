@@ -1,0 +1,139 @@
+.Cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1 1 auto;
+    margin: 10px;
+}
+
+.Cart__content{
+    background: #FFFFFF;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.content-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.top__clearCart{
+    width: 170px;
+    height: 40px;
+    background: none;
+    border: 1px solid;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+}.top__clearCart:hover{
+    box-shadow: 5px 5px 10px #a3a3a3;
+}
+
+.top__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.top__title img{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.top__title span{
+    font-size: 25px;
+    margin: 5px;
+}
+
+.content-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 15px;
+}
+.content-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 10px;
+}
+
+.content-bottom button{
+    width: 170px;
+    height: 40px;
+    background: none;
+    border: 1px solid;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.content-bottom .bottom-order{
+    background: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    height: 45px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.content-bottom .bottom-order:hover{
+    box-shadow: -1px 2px 15px 1px #ff0000;
+}
+
+.content-bottom .bottom-go:hover{
+    box-shadow: 5px 5px 10px #a3a3a3;
+}
+
+.Cart_Empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.Cart_Empty button{
+    width: 170px;
+    height: 40px;
+    margin: 10px;
+    background: #FFFFFF;
+    border: 1px solid;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .content-bottom{
+        justify-content: center;
+    }
+    .Cart button{
+        margin: 5px;
+    }
+
+    .content-info{
+        justify-content: center;
+    }
+    .content-info span:first-child{
+        display: none;
+    }
+    .Cart__content{
+        width: 90%;
+    }
+}
+
+@media (max-width: 420px) {
+    .content-top{
+    justify-content: center;
+    }
+}

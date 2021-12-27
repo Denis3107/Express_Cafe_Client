@@ -1,0 +1,9 @@
+.Gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: 100%;
+    box-sizing: content-box;
+}

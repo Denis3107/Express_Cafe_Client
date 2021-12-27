@@ -1,0 +1,53 @@
+.Contacts{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.Contacts__map{
+    text-align: center;
+    width: 100vw;
+    margin: 5px;
+}
+
+.Contacts__info{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*display: grid;*/
+    /*grid-template-columns: 250px 250px;*/
+    /*margin: 5px;*/
+    /*grid-auto-flow: row dense;*/
+}
+
+.info{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.info h6{
+    margin: 5px;
+}
+.info span{
+    margin: 5px;
+    color: #E1DECE;
+}
+
+.info span a{
+    margin: 5px;
+}
+
+.info span img{
+    width: 36px;
+    height: 36px;
+    background-size:contain;
+}
