@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './Slider.css'
 import BtnSlider from './BtnSlider'
 
@@ -31,7 +31,7 @@ export default function Slider({slides}) {
         <div className="container-slider">
             {slides.map((obj, index) => {
                 return (
-                    <div key={obj+index} className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
+                    <div key={obj + index} className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
                         <img src={obj}/>
                     </div>
                 )
@@ -41,7 +41,8 @@ export default function Slider({slides}) {
 
             <div className="container-dots">
                 {Array.from({length: slides.length}).map((item, index) => (
-                    <div key={index} onClick={() => moveDot(index + 1)} className={slideIndex === index + 1 ? "dot active" : "dot"}></div>
+                    <div key={index} onClick={() => moveDot(index + 1)}
+                         className={slideIndex === index + 1 ? "dot active" : "dot"}></div>
                 ))}
             </div>
         </div>

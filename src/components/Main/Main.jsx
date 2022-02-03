@@ -6,16 +6,13 @@ const Main = (props) => {
     const [ModalActive, setActive] = useState(false)
     const [type,setType] = useState()
 
-
     function order(e){
         setActive(true)
         setType({type:e.target.value, typeOrder: 'message'})
     }
 
-
-
     return (
-        <div className="Main" style={иф}>
+        <div className="Main">
             <div className="Main__Info">
                 <h1>EXPRESS</h1>
                 <h3>Молодіжнний кафе в якому сподобається всім</h3>

@@ -67,9 +67,9 @@ const Form = ({ModalActive, typeOrder,type, setActive,cartItems, items,totalCoun
 
                 {(phone.isDirty && phone.isEmpty) && <div style = {{color: "red"}}>Поле не може бути пустим</div>}
                 {(phone.isDirty && phone.minLengthError) && <div style = {{color: "red"}}>Телефон дуже коротке</div>}
-                {(phone.isDirty && phone.maxLengthError) && <div style = {{color: "red"}}>Телефон дуже довге</div>}
+                {(phone.isDirty && phone.maxLengthError) && <div style = {{color: "red"}}>Телефон дуже довгий</div>}
                 {(phone.isDirty && phone.isPhone) && <div style = {{color: "red"}}>Невірно введений номер</div>}
-                <input type="text" placeholder={"Введіть телефон"} name="phone" value={phone.value} onChange={phone.onChange} onBlur={phone.onBlur}/>
+                <input type="text" placeholder={"+380970861091"} name="phone" value={phone.value.length === 1 ? "+38" + phone.value: phone.value} onChange={phone.onChange} onBlur={phone.onBlur}/>
 
                 <button type="submit" disabled={!name.inputValid || !phone.inputValid} >Відправити</button>
             </form> : <h1 style={{margin:"40px",textAlign: "center"}}>Дякуємо за замовлення, наші співробітники звяжуться з вами</h1> }
